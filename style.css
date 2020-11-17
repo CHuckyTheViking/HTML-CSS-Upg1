@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.border{
+    border: 1px solid #cccccc;
+}
+
+
+
+/* TOP DESIGN */
+
+.navbar-top{
+    display: none;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.navbar-top .border{
+    border-bottom:  1px solid#707070;
+    opacity: 60%;
+}
+
+.navbar-top .container{
+    padding: 0;
+    justify-content: space-between;
+    display: none;
+
+}
+
+.hours{
+    display: flex;
+    align-items: center;
+}
+
+.hours p{
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.icons-top{
+    list-style: none;
+    display: flex;
+    margin: 0; 
+}
+
+.icons-top li i{
+    margin-left: 1rem;
+    color: #2BAAEC;
+    font-size: 1.2rem;
+}
+
+.icons-top i:hover{
+    color: #25E6C8;
+}
+
+
+
+/* MAINMENU DESIGN */
+
+
+
+.logo{
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 25%;
+    display: flex;
+}
+
+.menu{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 3rem;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 7;
+    width: 30%;
+    text-align: left;
+    background: #2BAAEC;
+    
+    
+}
+
+.navbar-menu ul li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    padding:.5rem 1rem;
+    
+}
+
+.navbar-menu ul li a:hover{
+    background-color: #2b85ec;
+}
+
+.exit-btn{
+    margin-bottom: 1rem;
+    margin-top: -2.3rem;
+    text-align: right;
+    padding: 0 1.2rem;
+}
+
+.exit-btn img{
+    width: .8rem;
+    cursor: pointer;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+
+/* SECTIONS DESIGN */
+
+/* SECTION 1 */
+
+.placeholder-1{
+    width: 11rem;
+    margin-left: 0rem;
+    float: left;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    
+}
+
+.section-1{
+    background-color: #DEDEDE;
+    width: 100%;
+    display: table-cell;
+   
+}
+
+.head-1{
+    font-size: 1.1rem;
+    width: 45%;
+    float: right;
+    margin-right: .8rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.subhead-1{
+    font-size: .7rem;
+    width: 45%;
+    float: right;
+    margin-right: .8rem;
+}
+
+.clinic-btn{
+    text-decoration: none;
+    font-size: .65rem;
+    text-align: center;
+    background: #25E6C8;
+
+    border-radius: 5px;
+    padding: .4rem 2rem;
+    
+    float: right;
+    margin-right: 2.8rem;
+    margin-bottom: 2rem;
+    
+    color: #fff;
+    font-weight: 600;
+}
+
+/* SECTION 2 */
+
+.placeholder-2{
+    width: 9rem;
+    margin: 0;
+    height: 20rem;
+    float: right;
+}
+
+.section-2{
+    display: table-cell;
+}
+
+.section-2 h1{
+    font-size: 1.1rem;
+    margin-left: .8rem;
+    width: 60%;
+    margin-top: 2rem;
+    
+    border: 3px solid #25E6C8;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.section-2 p{
+    font-size: .7rem;
+    margin-left: .8rem;
+    width: 60%;
+}
+
+
+.section-2-stats{
+    display: flex;
+    margin-bottom: 1.4rem;
+    margin-left: 1rem;
+}
+
+.section-2-stats div{
+    margin-left: 2rem;
+}
+
+.section-2-stats h2{
+    font-size: .8rem;
+    color: #2BAAEC;
+    margin-bottom: 0;
+    margin-left: .9rem;
+ 
+}
+
+.section-2-stats p{
+    margin-top: 0;
+    font-size: .8rem;
+}
+
+
+
+/*  SECTION 3 / SERVICES  */
+
+.service-container{
+    display: table-cell;
+    background: #F7F7F7;
+    
+}
+
+.service-container h3{
+    font-size: .75rem;
+    margin-bottom: 0;
+}
+
+.service-container p {
+    font-size: .6rem;
+    margin-top: .3rem;
+}
+
+.service-container ul{
+    list-style-type: none;
+}
+
+.service-container ul li{
+    font-size: .5rem;
+    width: 35%;
+    float: left;
+    margin: 1rem 1rem;
+}
+
+.service-container ul li a img:hover{
+    background-color: #25E6C8;
+}
+
+
+.tooth{
+    width: 55%;
+    align-items: center;
+}
+
+
+
+.tooth-btn img{
+    background-color:#2BAAEC;
+    border-radius: 40px;
+    padding: .7rem;
+}
+
+
+
+/* APPOINTMENT AND FOOTER */
+
+.appointment{
+    background-color:#2BAAEC ;
+    display: flex;
+    text-align: center;
+    font-size: .8rem;
+    height: 9rem;
+    color: #fff;
+}
+
+.appointment-btn{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: .5rem;
+    color: #2BAAEC;
+    font-weight: 600;
+    
+}
+
+
+
+
+.hours-bottom i{
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    margin-left: .8rem;
+    color: #2BAAEC;
+}
+
+
+.hours-bottom p{
+    font-size: .92rem;
+    margin-top: .6rem;
+}
+
+.hours-bottom{
+    display: flex;
+}
+
+.mobile-footer{
+    background-color: #DEDEDE;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.icons-bottom{
+    list-style: none;
+    display: flex;
+    margin: 1rem .8rem 0 0; 
+
+}
+
+.icons-bottom li i{
+    margin-left: .6rem;
+    color:  #2BAAEC;
+    font-size: 1.2rem;
+}
+
+.icons-bottom i:hover{
+    color: #25E6C8;
+}
+
+.copyright{
+    background-color: #2BAAEC;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+    .container{
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container{
+        width: 720px;
+    }
+
+    .navbar-topmenu{
+        display: flex;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+
+    .container{
+        width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .container{
+        width: 1140px;
+    }
+    
+}
