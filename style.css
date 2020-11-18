@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+/* 
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;  
+*/
 
 *{
     box-sizing: border-box;
@@ -39,10 +44,9 @@ html, body{
 }
 
 .navbar-top .container{
+    display: none;
     padding: 0;
     justify-content: space-between;
-    display: none;
-
 }
 
 .hours{
@@ -73,9 +77,9 @@ html, body{
 
 
 
+
+
 /* MAINMENU DESIGN */
-
-
 
 .logo{
     width: 10rem;
@@ -103,11 +107,10 @@ header{
     top: 0;
     right: 0;
     position: fixed;
-    z-index: 7;
     width: 30%;
     text-align: left;
     background: #2BAAEC;
-    
+    font-family: 'Roboto Slab', serif;  
     
 }
 
@@ -148,7 +151,7 @@ header{
 
 .placeholder-1{
     width: 11rem;
-    margin-left: 0rem;
+    margin-left: .3rem;
     float: left;
     margin-top: 2rem;
     margin-bottom: 0;
@@ -159,11 +162,12 @@ header{
     background-color: #DEDEDE;
     width: 100%;
     display: table-cell;
-   
+    padding: 1rem 0;
 }
 
 .head-1{
-    font-size: 1.1rem;
+    font-family: 'Roboto Slab', serif; 
+    font-size: 1.05rem;
     width: 45%;
     float: right;
     margin-right: .8rem;
@@ -172,10 +176,11 @@ header{
 }
 
 .subhead-1{
-    font-size: .7rem;
+    font-size: .9rem;
     width: 45%;
     float: right;
     margin-right: .8rem;
+    margin-bottom: 0;
 }
 
 .clinic-btn{
@@ -183,14 +188,12 @@ header{
     font-size: .65rem;
     text-align: center;
     background: #25E6C8;
-
     border-radius: 5px;
     padding: .4rem 2rem;
-    
     float: right;
-    margin-right: 2.8rem;
     margin-bottom: 2rem;
-    
+    margin-top: 1rem;
+    margin-right: 2.8rem;
     color: #fff;
     font-weight: 600;
 }
@@ -202,27 +205,34 @@ header{
     margin: 0;
     height: 20rem;
     float: right;
+    margin-right: .3rem;
+    margin-top: 3rem;
 }
 
 .section-2{
     display: table-cell;
+    padding: 1rem 0;
+    
 }
 
-.section-2 h1{
+.head-2{
     font-size: 1.1rem;
     margin-left: .8rem;
     width: 60%;
     margin-top: 2rem;
-    
+    font-family: 'Roboto Slab', serif;  
     border: 3px solid #25E6C8;
     border-top: none;
     border-left: none;
     border-right: none;
+}
 
+.clinic{
+    color: #2BAAEC;
 }
 
 .section-2 p{
-    font-size: .7rem;
+    font-size: .9rem;
     margin-left: .8rem;
     width: 60%;
 }
@@ -232,18 +242,18 @@ header{
     display: flex;
     margin-bottom: 1.4rem;
     margin-left: 1rem;
+    font-family: 'Roboto Slab', serif; 
 }
 
 .section-2-stats div{
-    margin-left: 2rem;
+    margin-left: .5rem;
 }
 
 .section-2-stats h2{
-    font-size: .8rem;
+    font-size: 1rem;
     color: #2BAAEC;
     margin-bottom: 0;
     margin-left: .9rem;
- 
 }
 
 .section-2-stats p{
@@ -255,62 +265,106 @@ header{
 
 /*  SECTION 3 / SERVICES  */
 
-.service-container{
-    display: table-cell;
+
+
+.service-container .container{
+    display: grid;
     background: #F7F7F7;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: 'Roboto Slab', serif; 
+
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas: "hh hh"
+                         "b1 b2" 
+                         "b3 b4"
+                         "b5 b6";
+                         
     
 }
 
+#header{
+    grid-area: hh;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #25E6C8;
+    width: 65%;
+}
+
+.tooth-box{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem;
+    border-radius: 20px;
+    padding: .5rem;
+    box-shadow:inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#box-1{
+    grid-area: b1;
+}
+#box-2{
+    grid-area: b2;
+}
+#box-3{
+    grid-area: b3;
+}
+#box-4{
+    grid-area: b4;
+}
+#box-5{
+    grid-area: b5;
+}
+#box-6{
+    grid-area: b6;
+}
+
 .service-container h3{
-    font-size: .75rem;
+    margin-top: .3rem;
+    font-size: 1.1rem;
     margin-bottom: 0;
 }
 
 .service-container p {
-    font-size: .6rem;
+    font-size: .9rem;
     margin-top: .3rem;
 }
 
-.service-container ul{
-    list-style-type: none;
-}
-
-.service-container ul li{
-    font-size: .5rem;
-    width: 35%;
-    float: left;
-    margin: 1rem 1rem;
-}
-
-.service-container ul li a img:hover{
-    background-color: #25E6C8;
-}
-
-
-.tooth{
-    width: 55%;
+.tooth-box img{
     align-items: center;
+    background-color: #2BAAEC;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-clip: padding-box;
+    border-radius: 50px; 
+}
+
+.tooth-box img:hover{
+    background-color: #25E6C8;
+    cursor: pointer;
 }
 
 
-
-.tooth-btn img{
-    background-color:#2BAAEC;
-    border-radius: 40px;
-    padding: .7rem;
-}
 
 
 
 /* APPOINTMENT AND FOOTER */
 
+
+
 .appointment{
     background-color:#2BAAEC ;
+    opacity: 80%;
     display: flex;
     text-align: center;
     font-size: .8rem;
     height: 9rem;
     color: #fff;
+    padding-top: .5rem;
+    
+}
+.appointment h2{
+    font-family: 'Roboto Slab', serif; 
 }
 
 .appointment-btn{
@@ -344,16 +398,17 @@ header{
 }
 
 .mobile-footer{
-    background-color: #DEDEDE;
+    background-color: #fff;
     margin-bottom: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .icons-bottom{
     list-style: none;
     display: flex;
+    padding-top: .3rem;
     margin: 1rem .8rem 0 0; 
-
 }
 
 .icons-bottom li i{
@@ -368,40 +423,13 @@ header{
 
 .copyright{
     background-color: #2BAAEC;
-    margin: 0;
-    padding: 0;
+    color: #fff;
+    padding: .5rem;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.copyright p{
+    margin: .2rem;
+}
 
 
 
@@ -426,10 +454,50 @@ header{
         width: 720px;
     }
 
-    .navbar-topmenu{
+    .navbar-top .container{
         display: flex;
     }
 
+    .navbar-top{
+        display: block;
+    }
+
+    .logo{
+        margin-left: 0;
+    }
+    .mobile-footer{
+        display: none;
+    }
+    
+    .appointment{
+        padding-top: 1rem;
+    }
+
+    .hide-desktop{
+        display: none;
+    }
+
+    .show-desktop{
+        display: block;
+    }
+
+    .navbar-menu ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 1rem;
+    }
+    .navbar-menu ul li a{
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 .8rem;
+        text-align: center;
+    }
+    .navbar-menu ul li a:hover{
+        background-color: #36363627;
+    }
 
 }
 
