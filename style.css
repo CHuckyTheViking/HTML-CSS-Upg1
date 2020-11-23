@@ -53,6 +53,10 @@ html, body{
     display: flex;
     align-items: center;
 }
+.hours i{
+    margin-right: .5rem;
+    color: #2BAAEC;
+}
 
 .hours p{
     margin: 0;
@@ -206,7 +210,7 @@ header{
     text-decoration: none;
     font-size: .65rem;
     background: #25E6C8;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: .5rem 1rem;
     color: #fff;
     font-weight: 600;
@@ -239,7 +243,6 @@ header{
     width: 60%;
     margin-top: 2rem;
     font-family: 'Roboto Slab', serif;  
-    border-bottom: 3px solid #25E6C8;
 }
 
 .clinic{
@@ -250,6 +253,11 @@ header{
     font-size: .9rem;
     margin-left: .8rem;
     width: 60%;
+    
+}
+#subhead-2{
+    border-top: 3px solid #25E6C8;
+    padding-top: 1rem;
 }
 
 .section-2-stats{
@@ -321,6 +329,22 @@ header{
     box-shadow:inset 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
 }
 
+.tooth-box img{
+    align-items: center;
+    background-color: #25E6C8;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 50px; 
+    overflow: hidden;
+    
+}
+
+
+.tooth-box img:hover{
+    background-color: #2BAAEC;
+    cursor: pointer;
+}
+
 #box-1{
     grid-area: b1;
 }
@@ -337,7 +361,7 @@ header{
     grid-area: b5;
 }
 #box-6{
-    grid-area: b6;
+    grid-area: b6;    
 }
 
 .service-container h3{
@@ -351,19 +375,7 @@ header{
     margin-top: .3rem;
 }
 
-.tooth-box img{
-    align-items: center;
-    background-color: #2BAAEC;
-    margin-top: 1rem;
-    padding: 1rem;
-    background-clip: padding-box;
-    border-radius: 50px; 
-}
 
-.tooth-box img:hover{
-    background-color: #25E6C8;
-    cursor: pointer;
-}
 
 
 
@@ -494,7 +506,6 @@ header{
     .hide-desktop{
         display: none;
     }
-
     .show-desktop{
         display: block;
     }
@@ -504,10 +515,13 @@ header{
         width: auto;
         background: none;
         display: flex;
+        
         padding-top: 1.7rem;
     }
     .navbar-menu ul li a{
         font-size: 1.3rem;
+        position: relative;
+        right: -20px;
     }
     .navbar-menu ul li a:hover{
         background-color: #36363627;
@@ -587,9 +601,6 @@ header{
         margin-top: 5rem;
     }
 
-    .section-1 .container ul li{
-        margin: 1.25rem 0;
-    }
     .placeholder-1{
         width: 20rem;
     }
@@ -618,6 +629,7 @@ header{
     justify-items: center;
     }
     
+    
 }
 
 @media (min-width: 1600px) {
@@ -625,5 +637,105 @@ header{
     .container{
         width: 1460px;
     } 
+
+    .logo{
+        height: 5rem;
+    }
+
+    .service-container{
+        padding-bottom: 1rem;
+    }
+    .service-container .container #header{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        width: 30%;
+    }
+    
+
+    .placeholder-1{
+        width: 25rem;
+    }
+    .section-1 .container div ul{
+        margin-left: 6rem;
+    }
+    
+    .section-1 .container .head-1{
+        margin-top: 7rem;
+        font-size: 2.2rem;
+        width: 45%;
+    }
+    .section-1 .container .subhead-1{
+        font-size: 1.2rem;
+        width: 70%;
+    }
+    .clinic-btn{
+        padding: 1rem 2rem;
+    }
+    .section-1 .container div ul li:last-child{
+        margin-top: 2rem;
+    }
+
+    .section-2 .head-2{
+        width: 28%;
+    }
+    .section-2 .subhead-2{
+        margin-top: 2rem;
+        width: 60%;
+    }
+    .section-2-stats div p{
+        width: 100%;
+    }
+    .section-2-stats div{
+        margin-left: 2rem;
+    }
+    .section-2{
+        padding-left: 4rem;
+        padding-right: 7rem;
+    }
+
+
+
+    .tooth-box{
+        width: 90%;
+        padding: 3rem;
+       
+    }
+    .tooth-box h3{
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+    }
+    .tooth-box p{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    .service-container .container{
+        margin-bottom: 3rem;
+    }
+
+
+    .appointment{
+        padding-top: 0;
+    }
+    .appointment .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+    }
+    .appointment .container h2{
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .appointment-btn{
+        height: 3rem;
+        /* margin-top: 1rem; */
+        padding: .8rem 2rem;
+        font-size: 1rem;
+    }
+
+
 }
 
